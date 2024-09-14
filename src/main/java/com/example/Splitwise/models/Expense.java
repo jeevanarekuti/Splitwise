@@ -15,6 +15,9 @@ public class Expense extends BaseModel{
     private String description;
     private ExpenseStatus status;
 
+
     private List<ExpenseUserPaidBy> paidBy;
     private List<ExpenseUserOwedBy> owedBy;
+
+    private int groupId;
 }

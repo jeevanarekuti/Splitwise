@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ExpenseRepository extends JpaRepository<Expense, Integer> {
     List<Expense> findByIdIn(List<Integer> expenseIds);
+
+    List<Expense> findByGroupIdIsNullAndIdIn(List<Integer> expenseIds);
 }
